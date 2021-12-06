@@ -1,5 +1,6 @@
 module bitbucket.org/jbehrends/invest-graph/client
 
+// +heroku goVersion go1.17
 go 1.17
 
 require (
