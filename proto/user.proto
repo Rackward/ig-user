@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option go_package = "./user";
+
+service Users {
+    rpc CreateUser(CreateUserRequest) returns (CreateUserResponse) {}
+}
+
+/**
+ * RPCs
+ */
+
+message CreateUserRequest {
+    string username = 1;
+}
+
+message CreateUserResponse {
+    User user = 1;
+}
+
+/**
+ * Enums
+ */
+
+message User {
+    uint64 id = 1;
+    string username = 2;
+}

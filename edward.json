@@ -1,0 +1,17 @@
+{
+    "groups": [
+        {
+            "name": "main",
+            "children": ["noenv"]
+        }
+    ],
+    "services": [
+        {
+            "name": "database",
+            "path": ".",
+            "commands": {
+                "launch": "docker-compose up --build"
+            }
+        }
+    ]
+}
